@@ -9,7 +9,7 @@ console.log(instrument);
 
 const button = document.querySelector("button.login");
 
-console.log(button);
+console.dir(button);
 
 
 // question 3
@@ -34,7 +34,7 @@ console.table(instruments);
 //var age = 13;
 
 const name = "Percival";
-let age = 13;
+const age = 13;
 
 
 // question 5
@@ -42,7 +42,7 @@ let age = 13;
 //var total = 0;
 //total = total + 10;
 
-const total = 0;
+let total = 0;
 total = total + 10;
 
 
@@ -56,6 +56,45 @@ for (let i = 0; i <= 5; i++) {
 
 const firstName = "Florence";
 
-const introduction = "Hello, my name is " + firstName + ".";
+const introduction = `Hello, my name is ${firstName}.`;
 
 console.log(introduction);
+
+// question 8
+
+const title = "Big Technical Event";
+
+const whatToHave = "good time";
+
+const welcome = `Welcome!
+                This ${title} is starting today.
+                Have a ${whatToHave}!`;
+
+console.log(welcome);
+
+
+// question 9
+
+const car = {
+    "paint-colour": "red",
+    "number of wheels": 3
+};
+
+console.log(car["paint-colour"]);
+console.log(car["number of wheels"])
+
+
+// question 10
+
+const product = {
+    name: "Chicken Lips",
+    price: 35,
+    expired: true,
+    getExpired: function() {
+        console.log(this.expired);
+    }
+}
+
+product.getExpired();
+
+
